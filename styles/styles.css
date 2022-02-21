@@ -1,0 +1,135 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #f9fbff;
+}
+
+::selection {
+  background-color: #abc4ff;
+}
+
+#add-container {
+  text-align: center;
+}
+
+#add-container h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#add-container p {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+#add-container input {
+  font-size: 1.2rem;
+  margin: 0 auto 1rem auto;
+  width: 20rem;
+  padding: 0.5rem;
+  display: block;
+  border-radius: 4px;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  box-shadow: 4px 4px 15px rgba(216, 216, 216, 0.1)
+}
+
+#add-container input:focus {
+  border: 3px solid #555;
+  border-radius: 4px;
+  box-shadow: 4px 4px 15px rgba(170, 170, 170, 0.3)
+}
+
+.item-btn {
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  transition: 0.1s;
+  cursor: pointer;
+  padding: 0.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.1s;
+  box-shadow: 4px 4px 15px rgba(216, 216, 216, 0.2)
+}
+
+.item-btn:hover {
+  border: 2px solid #555;
+  border-radius: 4px;
+  box-shadow: 4px 4px 15px rgba(170, 170, 170, 0.3)
+}
+
+#items-container {
+  text-align: center;
+  display: block;
+}
+
+#items-container ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+#items-container li {
+  margin: 0rem 8rem;
+  border-radius: 8px;
+  width: 20rem;
+}
+
+#items-container h2 {
+  font-family: 'PT Sans', sans-serif;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem auto 1rem auto;
+}
+
+#items-container p {
+  font-size: 1.5rem;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 4px;
+  text-align: left;
+}
+
+.have-need-container {
+  border-color: #c8c9ca;
+  border-width: 2px;
+  border-style: solid;
+  width: 22rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+hr {
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+}
+
+.checkbox {
+  float: left;
+  margin-top: 0.95rem;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+
+.remove-item {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  float: right;
+  color: red;
+  cursor: pointer;
+}
+
+.remove-item:hover {
+  color: rgb(226, 0, 0);
+  transition: 0.5s;
+}
+
+@media (max-width: 48rem) {
+  html {
+    overflow-y: auto;
+  }
+}

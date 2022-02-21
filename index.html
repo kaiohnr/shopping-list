@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+    <link rel="manifest" href="icons/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script src="/scripts/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div id="add-container">
+        <h1>Shopping List</h1>
+        <p>Add item:</p>
+        <input
+          type="text"
+          name="useritem"
+          id="input-item"
+          maxlength="13"
+          placeholder="Item..."
+        />
+        <button class="item-btn" id="need-btn" data-buttonid="need">
+          Need
+        </button>
+        <button class="item-btn" id="have-btn" data-buttonid="have">
+          Have
+        </button>
+      </div>
+      <div id="items-container">
+        <ul>
+          <li>
+            <h2>Need:</h2>
+            <div
+              id="need-container"
+              class="have-need-container needMobile"
+            ></div>
+          </li>
+          <li>
+            <h2>Have:</h2>
+            <div
+              id="have-container"
+              class="have-need-container haveMobile"
+            ></div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
